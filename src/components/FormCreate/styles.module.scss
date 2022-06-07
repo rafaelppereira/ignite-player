@@ -1,0 +1,39 @@
+.formCreate {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+
+  input,
+  button {
+    height: 3.375rem;
+  }
+
+  input {
+    flex: 1;
+
+    background: var(--gray-500);
+    color: var(--gray-100);
+    border: 0;
+    padding-left: 1rem;
+    border-radius: 8px;
+  }
+
+  button {
+    background: var(--blue-800);
+    color: var(--gray-100);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+
+    border-radius: 8px;
+    border: 0;
+    transition: background 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--blue-500);
+    }
+  }
+}

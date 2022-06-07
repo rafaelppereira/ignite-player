@@ -1,0 +1,76 @@
+.task {
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & + .task {
+    margin-top: 0.75rem;
+  }
+
+  .toggleInput {
+    display: none;
+    visibility: 0;
+    opacity: 0;
+    max-height: 0;
+
+    &:checked ~ .checkbox {
+      background: var(--purple-500);
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  .checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--blue-500);
+
+    cursor: pointer;
+
+    svg {
+      color: var(--gray-100);
+      display: none;
+    }
+  }
+
+  p {
+    flex: 1;
+    color: var(--gray-100);
+    
+    &.checked {
+      text-decoration: line-through;
+      color: var(--gray-300);
+    }
+  }
+
+  button {
+    line-height: 0;
+    background: transparent;
+    border: 0;
+
+    color: var(--gray-300);
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+
+    padding: 0.31rem;
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--gray-400);
+      color: var(--danger-500);
+    }
+  }
+}

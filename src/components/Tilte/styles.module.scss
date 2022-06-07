@@ -1,0 +1,39 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 4rem;
+  padding-bottom: 1.5rem;
+
+  border-bottom: 1px solid var(--gray-400);
+
+  margin-bottom: 1.5rem;
+
+  .createdTasks,
+  .completedTasks {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    strong {
+      font-weight: bold;
+    }
+
+    span {
+      background: var(--gray-400);
+      padding: 0.125rem 0.5rem;
+      color: var(--gray-200);
+      border-radius: 99rem;
+      font-weight: bold;
+    }
+  }
+
+  .createdTasks strong {
+    color: var(--blue-500);
+  }
+
+  .completedTasks strong {
+    color: var(--purple-500);
+  }
+}
